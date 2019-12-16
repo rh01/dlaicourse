@@ -42,6 +42,8 @@ export class MnistData {
   }
 
   async load() {
+    // Download the sprite and slice it
+    // Download the labels and decode them
     // Make a request for the MNIST sprited image.
     const img = new Image();
     const canvas = document.createElement('canvas');
@@ -104,6 +106,7 @@ export class MnistData {
   }
 
   nextTrainBatch(batchSize) {
+    // Get the next training batch
     return this.nextBatch(
         batchSize, [this.trainImages, this.trainLabels], () => {
           this.shuffledTrainIndex =

@@ -20,6 +20,7 @@ function getModel() {
 	return model;
 }
 
+// 展示训练过程的函数，处理训练过程中指标数据
 async function train(model, data) {
 	const metrics = ['loss', 'val_loss', 'acc', 'val_acc'];
 	const container = { name: 'Model Training', styles: { height: '640px' } };
