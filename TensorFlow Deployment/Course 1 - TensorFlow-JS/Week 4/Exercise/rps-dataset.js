@@ -1,8 +1,10 @@
 class RPSDataset {
+  // 构造器函数
   constructor() {
     this.labels = []
   }
 
+  // 增加样本
   addExample(example, label) {
     if (this.xs == null) {
       this.xs = tf.keep(example);

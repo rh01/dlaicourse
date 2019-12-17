@@ -1,5 +1,5 @@
-let mobilenet;
-let model;
+let mobilenet; // 定义mobilenet变量
+let model;     // 定义model 
 const webcam = new Webcam(document.getElementById('wc'));
 const dataset = new RPSDataset();
 var rockSamples=0, paperSamples=0, scissorsSamples=0;
